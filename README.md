@@ -23,3 +23,9 @@ Routes :
 
 Problème avec les clés :
     Il semble que chaque widget doive avoir une clé. J'ai tapé les termes exacts de mon erreur dans le navigateur et j'ai trouvé le lien Dart correspondant à ce sujet : https://dart-lang.github.io/linter/lints/use_key_in_widget_constructors.html
+
+## AppBar widget
+
+Vu que la documentation est très bien faite, je commence par aller voir comment faire une AppBar : https://api.flutter.dev/flutter/material/AppBar-class.html
+
+Je demande à OpenAI de m'expliquer simplement ce qu'est un Scaffold car jusqu'ici le concept n'était pas très clair et la documentation imprécise.

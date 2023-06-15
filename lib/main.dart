@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ContactPage()),
+                  MaterialPageRoute(builder: (context) => const ContactPage()),
                 );
               },
               icon: Icon(icon),
@@ -57,8 +57,20 @@ class ContactPage extends StatelessWidget {
  const ContactPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('No contact for the moment'),
+
+    final theme = Theme.of(context);
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Page Contact'),
+        backgroundColor: theme.colorScheme.surface,
+        elevation: 10,
+      ),
+      body: Container(
+        color: theme.colorScheme.secondary,
+        child: const Center(
+          child: Text('No contact for the moment'),
+          ),
+      ),
     );
   }
 }

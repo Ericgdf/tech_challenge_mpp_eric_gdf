@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(const MainApp());
 }
@@ -23,6 +24,7 @@ class MainApp extends StatelessWidget {
 
 // Landing page with button
 class HomePage extends StatelessWidget {
+  HomePage({super.key});
   final IconData icon = Icons.flutter_dash_rounded;
 
   @override
@@ -52,6 +54,7 @@ class HomePage extends StatelessWidget {
 }
 
 class ContactPage extends StatelessWidget {
+ const ContactPage({super.key});
   @override
   Widget build(BuildContext context) {
     return const Center(

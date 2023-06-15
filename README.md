@@ -19,3 +19,7 @@ Design :
 
 Routes : 
     Je suis allé dans la documentation de Flutter pour voir comment créer des routes, et la méthode est claire, je l'ai donc appliqué : https://docs.flutter.dev/cookbook/navigation/navigation-basics
+
+
+Problème avec les clés :
+    Il semble que chaque widget doive avoir une clé. J'ai tapé les termes exacts de mon erreur dans le navigateur et j'ai trouvé le lien Dart correspondant à ce sujet : https://dart-lang.github.io/linter/lints/use_key_in_widget_constructors.html

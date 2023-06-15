@@ -10,7 +10,7 @@ J'ai choisi d'installer Flutter sur mon ordinateur car c'est une technologie qui
 
 - J'ai commencé par comprendre les fondamentaux de Dart grâce à l'introduction à Dart disponible sur le site : https://dart.dev/language. J'ai demandé à OpenAI de m'expliquer le code de base qui se trouvait dans l'application pour comprendre la mécanique. Étant débutant en Dart, j'ai demandé à OpenAI de me créer une cheet sheat sur les fondamentaux de Dart et les bonnes pratiques en termes de code.
 
-- J'ai commencé par suivre les leçons du codelab pour la première application jusqu'à la création de la page, car elles reprennent la plupart des éléments du tech challenge : https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=fr#2.
+- J'ai ensuite suivie les leçons du codelab pour la première application jusqu'à la création de la page, car elles reprennent la plupart des éléments du tech challenge : https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=fr#2.
 
 ## Créer mon premier widget : Le Bouton ! 
 
@@ -26,6 +26,33 @@ Problème avec les clés :
 
 ## AppBar widget
 
-Vu que la documentation est très bien faite, je commence par aller voir comment faire une AppBar : https://api.flutter.dev/flutter/material/AppBar-class.html
+Vu que la documentation est très bien faite, j'ai commencé par aller voir comment faire une AppBar : https://api.flutter.dev/flutter/material/AppBar-class.html
 
 Je demande à OpenAI de m'expliquer simplement ce qu'est un Scaffold car jusqu'ici le concept n'était pas très clair et la documentation imprécise.
+
+## Card widget
+
+Je me base sur la création de la BigCard que j'ai faite plus tôt dans les exercices Flutter pour la reproduire avec le modèle de contact.
+
+J'utilise donc la méthode de refactoring pour créer l'objet.
+
+Pour créer mon objet, j'apprends le CSS made in Flutter en regardant directement dans la documentation :
+
+Column : https://api.flutter.dev/flutter/widgets/Column-class.html
+Row : https://api.flutter.dev/flutter/widgets/Row-class.html
+TextStyle : https://api.flutter.dev/flutter/painting/TextStyle-class.html
+Padding : https://api.flutter.dev/flutter/widgets/Padding-class.html
+ListView pour le Scroll : https://api.flutter.dev/flutter/widgets/ListView-class.html
+
+## Pour le clique qui renvoie vers google 
+
+J'ai écrit mon problème dans Google, trouvé ce lien Stack Overflow qui parle de InkWell : https://stackoverflow.com/questions/43583411/how-to-create-a-hyperlink-in-flutter-widget. Je suis donc allé voir dans la documentation ce qu'était l'InkWell.
+
+Ensuite, en regardant la documentation officielle d'InkWell, j'ai vu qu'il fallait gérer les dépendances avec url_launcher. Je suis donc allé voir la documentation officielle de cette dernière, disponible ici : https://pub.dev/packages/url_launcher. Étant habitué à la documentation npm avec React, j'ai rapidement compris les onglets et pu mettre en place le lien dynamique. J'ai eu un conflit avec le support des liens symboliques, mais j'ai trouvé la solution sur Stack Overflow : https://stackoverflow.com/questions/68089177/flutter-building-with-plugins-requires-symlink-support.
+
+Pour finir, je demande à OpenAI de m'expliquer ligne par ligne le code de la fonction Future<void> donner sur la page du package, car pour le moment je ne suis pas encore familier avec ce vocabulaire.
+
+
+
+  
+ 

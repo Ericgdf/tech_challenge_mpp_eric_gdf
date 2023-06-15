@@ -44,13 +44,20 @@ TextStyle : https://api.flutter.dev/flutter/painting/TextStyle-class.html
 Padding : https://api.flutter.dev/flutter/widgets/Padding-class.html
 ListView pour le Scroll : https://api.flutter.dev/flutter/widgets/ListView-class.html
 
-## Pour le clique qui renvoie vers google 
+## BONUS Pour le clique qui renvoie vers google 
 
 J'ai écrit mon problème dans Google, trouvé ce lien Stack Overflow qui parle de InkWell : https://stackoverflow.com/questions/43583411/how-to-create-a-hyperlink-in-flutter-widget. Je suis donc allé voir dans la documentation ce qu'était l'InkWell.
 
 Ensuite, en regardant la documentation officielle d'InkWell, j'ai vu qu'il fallait gérer les dépendances avec url_launcher. Je suis donc allé voir la documentation officielle de cette dernière, disponible ici : https://pub.dev/packages/url_launcher. Étant habitué à la documentation npm avec React, j'ai rapidement compris les onglets et pu mettre en place le lien dynamique. J'ai eu un conflit avec le support des liens symboliques, mais j'ai trouvé la solution sur Stack Overflow : https://stackoverflow.com/questions/68089177/flutter-building-with-plugins-requires-symlink-support.
 
 Pour finir, je demande à OpenAI de m'expliquer ligne par ligne le code de la fonction Future<void> donner sur la page du package, car pour le moment je ne suis pas encore familier avec ce vocabulaire.
+
+## BONUS ajout d'icone copier phone number
+
+J'ai demandé à google ce qu'était un toast en flutter. 
+Je suis arrivé sur cette page stackOverflow https://stackoverflow.com/questions/45948168/how-to-create-toast-in-flutter qui abordais le concept de snackBar. 
+Je suis donc allé voir la documentation officelle à ce propos https://docs.flutter.dev/cookbook/design/snackbars encore une fois la doc était clair. j'ai donc gardé cela sous le coude et j'ai cherché dans google comment créer un icon cliquable en FLutter. Je suis arrivé sur la page de la documentation officel qui parle des IconButton https://api.flutter.dev/flutter/material/IconButton-class.html. 
+J'ai donc alliez les deux ensemble.
 
 
 

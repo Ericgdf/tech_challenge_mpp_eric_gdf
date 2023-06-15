@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
   }
 }
 
-// Landing page with button
+// Home Page widget with a button link to Contact Page
 class HomePage extends StatelessWidget {
   HomePage({super.key});
   final IconData icon = Icons.flutter_dash_rounded;
@@ -36,7 +36,8 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Welcome to my tech challenge', style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500)),
+            const Text('Welcome to my tech challenge',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
             const SizedBox(height: 30),
             ElevatedButton.icon(
               onPressed: () {
@@ -46,7 +47,8 @@ class HomePage extends StatelessWidget {
                 );
               },
               icon: Icon(icon),
-              label: const Text('Go to contact', style: TextStyle(fontSize: 18)),
+              label:
+                  const Text('Go to contact', style: TextStyle(fontSize: 18)),
             ),
           ],
         ),
@@ -55,6 +57,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
+// Contact Page Widget with an AppBar and body who generate Conctact Card
 class ContactPage extends StatelessWidget {
   final int numberOfCards = 17;
   const ContactPage({super.key});
@@ -68,9 +71,9 @@ class ContactPage extends StatelessWidget {
         elevation: 10,
       ),
       body: Container(
-       color: theme.colorScheme.primary,
+        color: theme.colorScheme.primary,
         child: Padding(
-          padding: const EdgeInsets.only(top :40.0),
+          padding: const EdgeInsets.only(top: 40.0),
           child: ListView(
             children: [
               Column(
@@ -88,6 +91,7 @@ class ContactPage extends StatelessWidget {
   }
 }
 
+// Contact card widget used on the Contact page component
 class ContactCard extends StatelessWidget {
   const ContactCard({
     super.key,
@@ -96,7 +100,7 @@ class ContactCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-  
+
     return InkWell(
       onTap: () {
         _launchUrl();
@@ -104,12 +108,12 @@ class ContactCard extends StatelessWidget {
       child: Card(
           color: theme.colorScheme.surface,
           elevation: 8.0,
-          child: const Padding(
+          child: Padding(
               padding: EdgeInsets.all(20.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Row(
+                  const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text('Eric', style: TextStyle(fontSize: 18)),
@@ -117,7 +121,28 @@ class ContactCard extends StatelessWidget {
                       Text('GODEFROY', style: TextStyle(fontSize: 18)),
                     ],
                   ),
-                  Text('0645454545', style: TextStyle(fontSize: 14))
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('0645454545', style: TextStyle(fontSize: 14)),
+                      IconButton(
+                        iconSize: 20,
+                        icon: const Icon(Icons.phone_android),
+                        onPressed: () {
+                          final snackBar = SnackBar(
+                            content: const Text('Number copy to the clipBoard'),
+                            action: SnackBarAction(
+                              label: 'Undo',
+                              onPressed: () {
+                                // Some code to undo the change.
+                              },
+                            ),
+                          );
+                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                        },
+                      ),
+                    ],
+                  ),
                 ],
               ))),
     );

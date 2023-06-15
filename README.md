@@ -54,10 +54,10 @@ Pour finir, je demande à OpenAI de m'expliquer ligne par ligne le code de la fo
 
 ## BONUS ajout d'icone copier phone number
 
-J'ai demandé à google ce qu'était un toast en flutter. 
-Je suis arrivé sur cette page stackOverflow https://stackoverflow.com/questions/45948168/how-to-create-toast-in-flutter qui abordais le concept de snackBar. 
-Je suis donc allé voir la documentation officelle à ce propos https://docs.flutter.dev/cookbook/design/snackbars encore une fois la doc était clair. j'ai donc gardé cela sous le coude et j'ai cherché dans google comment créer un icon cliquable en FLutter. Je suis arrivé sur la page de la documentation officel qui parle des IconButton https://api.flutter.dev/flutter/material/IconButton-class.html. 
-J'ai donc alliez les deux ensemble.
+J'ai demandé à Google ce qu'était un toast en Flutter.
+Je suis arrivé sur cette page Stack Overflow (https://stackoverflow.com/questions/45948168/how-to-create-toast-in-flutter) qui abordait le concept de snackBar.
+Je suis donc allé voir la documentation officielle à ce propos (https://docs.flutter.dev/cookbook/design/snackbars). Encore une fois, la doc était claire. J'ai donc gardé cela sous le coude et j'ai cherché dans Google comment créer un icône cliquable en Flutter. Je suis arrivé sur la page de la documentation officielle qui parle des IconButton (https://api.flutter.dev/flutter/material/IconButton-class.html).
+J'ai donc allié les deux ensemble.
 
 
 

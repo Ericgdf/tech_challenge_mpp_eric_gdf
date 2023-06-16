@@ -10,7 +10,7 @@ J'ai choisi d'installer Flutter sur mon ordinateur car c'est une technologie qui
 
 - J'ai commencé par comprendre les fondamentaux de Dart grâce à l'introduction à Dart disponible sur le site : https://dart.dev/language. J'ai demandé à OpenAI de m'expliquer le code de base qui se trouvait dans l'application pour comprendre la mécanique. Étant débutant en Dart, j'ai demandé à OpenAI de me créer une cheet sheat sur les fondamentaux de Dart et les bonnes pratiques en termes de code.
 
-- J'ai ensuite suivie les leçons du codelab pour la première application jusqu'à la création de la page, car elles reprennent la plupart des éléments du tech challenge : https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=fr#2.
+- J'ai ensuite suivie les leçons du codelab pour la première application jusqu'à la création de la page, pour bien comprendre les mécanisme de base de Flutter : https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=fr#2.
 
 ## Créer mon premier widget : Le Bouton ! 
 
@@ -60,6 +60,14 @@ Je suis donc allé voir la documentation officielle à ce propos (https://docs.f
 J'ai donc allié les deux ensemble.
 
 J'ai eu plusieurs fois l'erreur "Use 'const' with the constructor to improve performance". J'ai donc profité d'avoir encore un peut de temps pour étudier le concept de 'const' et 'final' avec cette article trés bien fait de medium : https://medium.com/flutter-community/the-flutter-const-keyword-demystified-c8d2a2609a80.
+
+## Design 
+
+Ayant encore un peu de temps et appréciant le design web, je décide d'approfondir le style de l'app. Je commence donc par revenir sur mon code de thème et à comprendre en profondeur le widget ThemeData grâce à la documentation officielle : https://docs.flutter.dev/cookbook/design/themes. Car je pense qu'il est important de penser son design en variable issue de la root. 
+
+- material3 qui semble un composant vraiment complet pour le design : https://docs.flutter.dev/ui/material
+- seedColor : https://api.flutter.dev/flutter/material/ColorScheme/ColorScheme.fromSeed.html
+- Google Fonts, je trouve le package qui est bien noté 140/140 sur pub.dev et je l'installe : https://pub.dev/packages/google_fonts/install
 
 
 

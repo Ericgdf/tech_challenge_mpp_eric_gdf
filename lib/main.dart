@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MainApp());
@@ -16,7 +17,9 @@ class MainApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color.fromARGB(255, 14, 96, 86)),
+              seedColor: const Color.fromARGB(255, 24, 122, 131)),
+          fontFamily:
+              GoogleFonts.urbanist(fontWeight: FontWeight.w500).fontFamily,
         ),
         home: HomePage());
   }
@@ -29,15 +32,17 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return Scaffold(
-      backgroundColor: theme.colorScheme.primary,
+      backgroundColor: Theme.of(context).colorScheme.primary,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Welcome to my tech challenge',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white)),
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white)),
             const SizedBox(height: 30),
             ElevatedButton.icon(
               onPressed: () {

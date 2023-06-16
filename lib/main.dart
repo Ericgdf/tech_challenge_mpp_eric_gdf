@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Welcome to my tech challenge',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white)),
             const SizedBox(height: 30),
             ElevatedButton.icon(
               onPressed: () {
@@ -109,22 +109,22 @@ class ContactCard extends StatelessWidget {
           color: theme.colorScheme.surface,
           elevation: 8.0,
           child: Padding(
-              padding: EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(20.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text('Eric', style: TextStyle(fontSize: 18)),
+                      Text('John', style: TextStyle(fontSize: 18)),
                       SizedBox(width: 10),
-                      Text('GODEFROY', style: TextStyle(fontSize: 18)),
+                      Text('Doe', style: TextStyle(fontSize: 18)),
                     ],
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text('0645454545', style: TextStyle(fontSize: 14)),
+                      const Text('064242424', style: TextStyle(fontSize: 14)),
                       IconButton(
                         iconSize: 20,
                         icon: const Icon(Icons.phone_android),

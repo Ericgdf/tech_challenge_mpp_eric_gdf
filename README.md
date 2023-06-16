@@ -59,6 +59,8 @@ Je suis arrivé sur cette page Stack Overflow (https://stackoverflow.com/questio
 Je suis donc allé voir la documentation officielle à ce propos (https://docs.flutter.dev/cookbook/design/snackbars). Encore une fois, la doc était claire. J'ai donc gardé cela sous le coude et j'ai cherché dans Google comment créer un icône cliquable en Flutter. Je suis arrivé sur la page de la documentation officielle qui parle des IconButton (https://api.flutter.dev/flutter/material/IconButton-class.html).
 J'ai donc allié les deux ensemble.
 
+J'ai eu plusieurs fois l'erreur "Use 'const' with the constructor to improve performance". J'ai donc profité d'avoir encore un peut de temps pour étudier le concept de 'const' et 'final' avec cette article trés bien fait de medium : https://medium.com/flutter-community/the-flutter-const-keyword-demystified-c8d2a2609a80.
+
 
 
   
